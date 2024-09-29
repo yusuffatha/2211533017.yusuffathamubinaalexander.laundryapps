@@ -48,7 +48,7 @@
                     android:layout_height="wrap_content"
                     android:text="ABC123"
                     android:textSize="18sp"
-                    android:textStyle="bold"
+                    android:textStyle="bold"/>
                 <!-- Deskripsi Promo -->
                 <TextView
                     android:id="@+id/tvDeskripsiPromo"
@@ -92,7 +92,7 @@
                     android:layout_height="wrap_content"
                     android:text="ABC123"
                     android:textSize="18sp"
-                    android:textStyle="bold"
+                    android:textStyle="bold"/>
 
                 <!-- Deskripsi Promo -->
                 <TextView

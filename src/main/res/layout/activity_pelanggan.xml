@@ -41,7 +41,7 @@
                 android:layout_height="wrap_content"
                 android:text="Fulan"
                 android:textSize="16sp"
-                android:textStyle="bold"
+                android:textStyle="bold"/>
             <!-- Harga Layanan -->
             <TextView
                 android:id="@+id/tvHargaLayanan1"
@@ -76,7 +76,7 @@
                 android:layout_height="wrap_content"
                 android:text="Fulanah"
                 android:textSize="16sp"
-                android:textStyle="bold"
+                android:textStyle="bold"/>
             <!-- Harga Layanan -->
             <TextView
                 android:id="@+id/tvHargaLayanan2"
@@ -111,7 +111,7 @@
                 android:layout_height="wrap_content"
                 android:text="Abdi"
                 android:textSize="16sp"
-                android:textStyle="bold"
+                android:textStyle="bold"/>
             <!-- Harga Layanan -->
             <TextView
                 android:id="@+id/tvHargaLayanan3"

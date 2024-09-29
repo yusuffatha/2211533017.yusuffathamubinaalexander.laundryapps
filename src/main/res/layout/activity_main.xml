@@ -60,12 +60,17 @@
             android:weightSum="2"
             android:orientation="horizontal">
             <androidx.cardview.widget.CardView
+                android:id="@+id/cvLaundry"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/md"
                 android:layout_weight="1"
                 app:cardCornerRadius="@dimen/lg">
                 <LinearLayout
+                    android:id="@+id/ll_laundry"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?android:attr/selectableItemBackground"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -86,6 +91,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
+                android:id="@+id/cvLayanan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/md"
@@ -119,6 +125,7 @@
             android:weightSum="2"
             android:orientation="horizontal">
             <androidx.cardview.widget.CardView
+                android:id="@+id/cvPelanggan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/md"
@@ -145,6 +152,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
+                android:id="@+id/cvPromo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/md"
