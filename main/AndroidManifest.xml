@@ -15,6 +15,9 @@
         android:theme="@style/Theme.LaundryApps"
         tools:targetApi="31">
         <activity
+            android:name=".pelanggan.PelangganEditActivity"
+            android:exported="false" />
+        <activity
             android:name=".layanan.LayananAddActivity"
             android:exported="false" />
         <activity

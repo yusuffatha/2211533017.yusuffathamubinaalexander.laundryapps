@@ -19,7 +19,7 @@ import java.util.UUID;
 
 public class PelangganAddActivity extends AppCompatActivity {
     EditText nama, email, hp;
-    Button btnSimpan, btnBatal;
+    Button btnSimpan, btnBatal, btnEdit;
     SQLiteHelper db;
 
 
@@ -36,6 +36,7 @@ public class PelangganAddActivity extends AppCompatActivity {
         hp = (EditText) findViewById(R.id.edPelAddHp);
         btnSimpan = (Button) findViewById(R.id.btnPelAddSimpan);
         btnBatal = (Button) findViewById(R.id.btnPelAddBatal);
+        btnEdit = (Button) findViewById(R.id.btnPelAddEdit);
 
         db = new SQLiteHelper(PelangganAddActivity.this);
 
@@ -53,7 +54,7 @@ public class PelangganAddActivity extends AppCompatActivity {
                 boolean cek = db.insertPelanggan(mp);
                 if (cek == true) {
                     Toast.makeText(PelangganAddActivity.this, "Data berhasil disimpan", Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(PelangganAddActivity.this, PelangganActivity.class));
+                //    startActivity(new Intent(PelangganAddActivity.this, PelangganActivity.class));
                     finish();
                 } else {
                     Toast.makeText(PelangganAddActivity.this, "Data gagal disimpan", Toast.LENGTH_SHORT).show();
@@ -67,5 +68,7 @@ public class PelangganAddActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+
     }
 }

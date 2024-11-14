@@ -5,33 +5,46 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorBackground"
     android:orientation="vertical"
-    android:background="@color/white"
     tools:context=".pelanggan.PelangganActivity">
 
     <LinearLayout
-        android:layout_margin="16dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
 
-        <Button
-            android:id="@+id/btnPelAdd"
-            android:backgroundTint="#4EF47D"
-            android:padding="16dp"
-            android:textSize="12sp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp"
-            android:text="Tambah Pelanggan"
-            android:textColor="@color/black"
-            app:icon="@drawable/ic_add" />
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rvPelanggan"
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnTambahPelanggan"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/xs"
+            android:layout_weight="1"
+            android:background="@color/noerYellow"
+            android:text="TAMBAH PELANGGAN"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnHapusActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/xs"
+            android:layout_weight="1"
+            android:background="@color/lightRed"
+            android:text="HAPUS PELANGGAN"
+            android:textSize="16sp"
+            android:textStyle="bold" />
     </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 </LinearLayout>

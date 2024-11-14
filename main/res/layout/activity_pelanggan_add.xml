@@ -13,9 +13,9 @@
 android:layout_width="match_parent"
 android:layout_height="wrap_content"
 android:orientation="vertical"
-android:layout_margin="@dimen/lg">
+android:layout_margin="16dp">
 <TextView
-    android:textColor="@color/black"
+    android:textColor="#4A60B6"
     android:textStyle="bold"
     android:layout_marginBottom="@dimen/lg"
     android:textSize="23sp"
@@ -31,15 +31,15 @@ android:layout_margin="@dimen/lg">
         android:layout_height="wrap_content"
         android:text="Nama"
         android:textColor="@android:color/black"/>
+
     <EditText
-        android:drawablePadding="@dimen/sm"
-        android:drawableLeft="@drawable/ic_username"
         android:id="@+id/edPelNama"
-        android:layout_marginTop="@dimen/sm"
-        android:padding="@dimen/md"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        />
+        android:layout_marginTop="@dimen/sm"
+        android:drawableLeft="@drawable/ic_username"
+        android:drawablePadding="@dimen/sm"
+        android:padding="@dimen/md" />
 </LinearLayout>
 <LinearLayout
     android:layout_marginTop="@dimen/md"
@@ -89,23 +89,25 @@ android:layout_margin="@dimen/lg">
     android:layout_height="wrap_content"
     android:orientation="horizontal"
     android:weightSum="2">
+
     <Button
         android:id="@+id/btnPelAddSimpan"
-        android:layout_marginRight="@dimen/xs"
-        android:background="#3DF24C"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginRight="3dp"
         android:layout_weight="1"
-        android:text="Simpan"/>
+        android:background="#3DF24C"
+        android:text="Simpan" />
+
     <Button
         android:id="@+id/btnPelAddBatal"
-        android:layout_marginLeft="@dimen/xs"
-        android:textColor="@color/white"
-        android:background="@color/black"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
         android:layout_weight="1"
-        android:text="Batal"/>
+        android:background="#3DF24C"
+        android:text="Batal"
+        android:textColor="@color/white" />
 </LinearLayout>
 </LinearLayout>
     </LinearLayout>

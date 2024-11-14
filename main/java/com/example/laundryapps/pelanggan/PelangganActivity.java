@@ -50,6 +50,13 @@ public class PelangganActivity extends AppCompatActivity {
         eventHandling();
         getData();
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        getData();
+    }
+
     private View.OnClickListener onClickListener = new
             View.OnClickListener() {
                 @Override
